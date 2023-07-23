@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Version=21.0
+Name=Brutal Doom
+GenericName=Legentary mod for DOOM
+Icon=/usr/share/games/brutal-doom/brutal-doom.jpg
+Exec=/usr/share/games/brutal-doom/gzdoom/gzdoom -config /usr/share/games/brutal-doom/gzdoom.ini
+Terminal=false
+MimeType=application/x-doom-wad;
+Categories=Game;
