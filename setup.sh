@@ -61,7 +61,8 @@ doom2_wad_download() {
 
 	clear;
 	dialog --title "[ Brutal DOOM Installer ]" --infobox "Downloading DOOM2.WAD ... stand by" 10 40;
-	aria2c https://doomguy.ru/download/doom2 &> /dev/null;
+	clear;
+	aria2c https://doomguy.ru/download/doom2;
 	unzip doom2 DOOM2.WAD;
 
 	if [ $(if_file_exists "DOOM2.WAD") -eq 1 ]; then
@@ -78,7 +79,9 @@ doom2_wad_download() {
 
 gzdoom_download() {
 	dialog --infobox "Downloading GZDoom Portable ... stand by" 10 60;
-	aria2c https://zdoom.org/files/gzdoom/bin/GZDoom.v4.10.0.LinuxPortable.tar.xz &> /dev/null;
+	sleep 3;
+	clear;
+	aria2c https://zdoom.org/files/gzdoom/bin/GZDoom.v4.10.0.LinuxPortable.tar.xz;
 
 	if [ $(if_file_exists "GZDoom.v4.10.0.LinuxPortable.tar.xz") -eq 1 ]; then
 		dialog --title "[ Brutal DOOM Installer ]" --msgbox "Error! Can not find GZDoom archive :(" 10 60;
