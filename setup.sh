@@ -46,6 +46,10 @@ check_dependencies() {
 		clear;
 		sudo ./dependences.sh
 	fi
+	if [ $? -eq 1 ]; then
+		clear;
+		exit 1;
+	fi
 	clear;
 	doom2_wad_download;
 }
