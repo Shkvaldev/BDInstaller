@@ -1,2 +1,0 @@
-brutal-doom.pk3 filter=lfs diff=lfs merge=lfs -text
-doom-metal-vol5.wad filter=lfs diff=lfs merge=lfs -text
